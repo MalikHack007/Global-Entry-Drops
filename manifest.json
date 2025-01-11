@@ -29,7 +29,17 @@
   },
 
   "permissions":[
-    "storage"
+    "storage",
+
+    "webNavigation",
+
+    "scripting", 
+    
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "https://northcms.wenzo.com/*"   
   ]
 
 
