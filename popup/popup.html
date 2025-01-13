@@ -13,8 +13,8 @@
         <h1 class="title is-4">Global Entry Drops</h1>
         <div class="field">
             <label class="label">Status</label>
-            <span class="tag is-success">Running</span>
-            <span class="tag is-danger">Stopped</span>
+            <span id="runningTag" class="tag is-success">Running</span>
+            <span id="stoppingTag" class="tag is-danger">Stopped</span>
         </div>
     </div>
 
@@ -25,6 +25,8 @@
             <div class="select">
                 <select id="locationID"></select>
             </div>
+
+            <p id="locationIdError" class="help is-danger" style="display: none">Please select a valid location</p>
         </div>
 
         <div class="field">
@@ -32,6 +34,7 @@
             <div class="control">
                 <input type="date" class="input" id="startDate">
             </div>
+            <p id="startDateError" class="help is-danger" style="display: none">Please select a valid start date</p>
         </div>
 
         <div class="field">
@@ -39,6 +42,7 @@
             <div class="control">
                 <input type="date" class="input" id="endDate">
             </div>
+            <p id="endDateError" class="help is-danger" style="display: none">Please select a valid end date</p>
         </div>
 
         <div class="container m-2">
